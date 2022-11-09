@@ -1,4 +1,19 @@
-function myFunction(x) 
+var isMenuOpened = false;
+
+function showHideMenu(x)
 {
-    x.classList.toggle("change");
+    var menu = document.getElementById('menu');
+
+    isMenuOpened = !isMenuOpened;
+
+    if (isMenuOpened)
+    {
+        x.classList.toggle("change");
+        menu.classList.toggle("menu-list-active");
+    }
+    else
+    {
+        x.classList.toggle("change");
+        menu.classList.toggle("menu-list-active");
+    }
 }
